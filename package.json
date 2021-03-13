@@ -1,0 +1,38 @@
+{
+  "name": "@codice-progressio/input-validaciones",
+  "version": "0.0.1",
+  "description": "Validaciones básicas para reacives forms",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "postversion": "rm -r dist && ng build @codice-progressio/input-validaciones --prod && mkdir dist && cp -r ../../dist/codice-progressio-input-validaciones/* dist/ ",
+    "publicar": "np --contents=./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelAngelRamirez/input-validaciones.git"
+  },
+  "keywords": [
+    "input",
+    "angular",
+    "validaciones",
+    "reactive forms"
+  ],
+  "author": "Rafael Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelAngelRamirez/input-validaciones/issues"
+  },
+  "homepage": "https://github.com/RafaelAngelRamirez/input-validaciones#readme",
+  "publishConfig": {},
+  "np": {
+    "access": "public",
+    "contents": "./dist"
+  },
+  "peerDependencies": {
+    "@angular/common": "^10.0.11",
+    "@angular/core": "^10.0.11"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
