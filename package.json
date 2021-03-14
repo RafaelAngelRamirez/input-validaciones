@@ -1,10 +1,10 @@
 {
   "name": "@codice-progressio/input-validaciones",
-  "version": "0.2.2",
+  "version": "0.1.0",
   "description": "Validaciones básicas para reacives forms",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "postversion": "rm -rf dist && ng build input-validaciones --prod && mkdir dist && cp -r ../../dist/input-validaciones/* dist/ ",
+    "postversion": "rm -r dist && ng build input-validaciones --prod && mkdir dist && cp -r ../../dist/input-validaciones/* dist/ ",
     "publicar": "np --contents=./dist"
   },
   "repository": {
