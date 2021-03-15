@@ -4,7 +4,6 @@ import { AbstractControl } from '@angular/forms'
 @Component({
   selector: 'codice-validaciones',
   templateUrl: 'input-validaciones.component.html',
-  styleUrls: ['input-validaciones.component.less'],
 })
 export class InputValidacionesComponent implements OnInit {
   _campo: AbstractControl = null
