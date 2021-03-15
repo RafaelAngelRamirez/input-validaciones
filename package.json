@@ -23,9 +23,10 @@
     "url": "https://github.com/RafaelAngelRamirez/input-validaciones/issues"
   },
   "homepage": "https://github.com/RafaelAngelRamirez/input-validaciones#readme",
-  "publishConfig": {},
+  "publishConfig": {
+    "access": "public"
+  },
   "np": {
-    "access": "public",
     "contents": "./dist"
   },
   "peerDependencies": {
