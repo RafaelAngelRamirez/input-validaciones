@@ -10,7 +10,7 @@ Mensajes de validaciones rápidos para reactive forms. Por el momento solo en es
 
 ### Uso
 
-Agrega el modal en los modulos que requieras validaciones.
+Agrega `InputValidacionesModule` en los modulos que requieras validaciones.
 
 ```javascript
 @NgModule({
@@ -47,7 +47,7 @@ nombre
       formControlName="nombre"
     />
     <small id="helpId" class="form-text text-muted">Nombre proveedor</small>
-    <codice-validacion [campo]="f('nombre')"></codice-validacion>
+    <codice-validaciones [campo]="f('nombre')"></codice-validaciones>
   </div>
 </div>
 <!-- 
@@ -94,10 +94,10 @@ Estos son algúnos snipets que ayudan en la creación de los formularios con una
       "    formControlName=\"${1:nombreDelCampo}\"",
       "  />",
       "  <small id=\"helpId\" class=\"form-text text-muted\">${5:Descripcion del input}</small>",
-      "  <codice-validacion",
+      "  <codice-validaciones",
       "    [campo]=\"f('${1:nombreDelCampo}')\"",
       "    ${4:[directo]=\"${3:true}\"}",
-      "  ></codice-validacion>",
+      "  ></codice-validaciones>",
       "</div>",
       "</div>",
 
@@ -174,10 +174,10 @@ Estos son algúnos snipets que ayudan en la creación de los formularios con una
       "    formControlName=\"${2:nombreDelCampo}\"",
       "  />",
       "  <small id=\"helpId\" class=\"form-text text-muted\">${6:Descripcion del input}</small>",
-      "  <codice-validacion",
+      "  <codice-validaciones",
       "    [campo]=\"${8:dummy}.get('${2:nombreDelCampo}')\"",
       "    ${5:[directo]=\"${4:true}\"}",
-      "  ></codice-validacion>",
+      "  ></codice-validaciones>",
       "</div>",
       "</div>",
 
@@ -216,10 +216,10 @@ Estos son algúnos snipets que ayudan en la creación de los formularios con una
       "    [formControl]=\"${8:dummy}\"",
       "  />",
       "  <small id=\"helpId\" class=\"form-text text-muted\">${6:Descripcion del input}</small>",
-      "  <codice-validacion",
+      "  <codice-validaciones",
       "    [campo]=\"${8:dummy}\"",
       "    ${5:[directo]=\"${4:true}\"}",
-      "  ></codice-validacion>",
+      "  ></codice-validaciones>",
       "</div>",
       "</div>",
 
