@@ -1,9 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { AbstractControl } from '@angular/forms'
+import { Component, Input, OnInit } from "@angular/core"
+import { AbstractControl } from "@angular/forms"
 
 @Component({
-  selector: 'codice-validaciones',
-  templateUrl: 'input-validaciones.component.html',
+  selector: "codice-validaciones",
+  templateUrl: "input-validaciones.component.html",
 })
 export class InputValidacionesComponent implements OnInit {
   _campo: AbstractControl = null
@@ -37,10 +37,10 @@ export class InputValidacionesComponent implements OnInit {
         maxlength: this.maxlength.bind(this),
         general: this.general.bind(this),
         email: () => {
-          return 'Correo no valido'
+          return "Correo no valido"
         },
 
-        'Mask error': () => 'Hay un error en el formato (mask)'
+        "Mask error": () => "Hay un error en el formato (mask)",
       }
     }
   }
@@ -73,38 +73,38 @@ export class InputValidacionesComponent implements OnInit {
   ngOnInit() {}
 
   min(): string {
-    return `El valor mínimo permitido es ${this.cge('min').min}`
+    return `El valor mínimo permitido es ${this.cge("min").min}`
   }
 
   max(): string {
-    return `El máximo permitido es ${this.cge('max').max}`
+    return `El máximo permitido es ${this.cge("max").max}`
   }
 
   tamanoMinimo(): string {
-    let cantidad = this.cge('tamanoMinimo').minimo > 1 ? '' : 'un '
-    let campo = this.cge('tamanoMinimo').minimo > 1 ? 'campos' : 'campo'
+    let cantidad = this.cge("tamanoMinimo").minimo > 1 ? "" : "un "
+    let campo = this.cge("tamanoMinimo").minimo > 1 ? "campos" : "campo"
     return `Debes seleccionar por lo menos ${cantidad} ${campo}`
   }
 
   minlength(): string {
-    let campo = this.cge('minlength')
+    let campo = this.cge("minlength")
     let cantidadCar = campo.requiredLength
     let faltan = cantidadCar - campo.actualLength
-    let conjuncion = cantidadCar > 1 ? cantidadCar : 'un '
-    let caracteres = cantidadCar > 1 ? 'caracteres' : 'caracter'
+    let conjuncion = cantidadCar > 1 ? cantidadCar : "un "
+    let caracteres = cantidadCar > 1 ? "caracteres" : "caracter"
     return `Debes escribir por lo menos ${conjuncion} ${caracteres}. (Faltan ${faltan})`
   }
   maxlength(): string {
-    let campo = this.cge('maxlength')
+    let campo = this.cge("maxlength")
     let cantidadCar = campo.requiredLength
     let sobran = campo.actualLength - cantidadCar
-    let conjuncion = cantidadCar > 1 ? cantidadCar : 'un '
-    let caracteres = cantidadCar > 1 ? 'caracteres' : 'caracter'
-    return `El maximo es  ${conjuncion} ${caracteres}. (Sobran ${sobran})`
+    let conjuncion = cantidadCar > 1 ? cantidadCar : "un "
+    let caracteres = cantidadCar > 1 ? "caracteres" : "caracter"
+    return `El máximo es  ${conjuncion} ${caracteres}. (Sobran ${sobran})`
   }
 
   general() {
-    return this.cge('general').mensaje
+    return this.cge("general").mensaje
   }
 
   cge(a) {
