@@ -4,7 +4,7 @@
   "description": "Validaciones básicas para reacives forms",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "postversion": "rm -rf dist && ng build input-validaciones --prod && mkdir dist && cp -r ../../dist/input-validaciones/* dist/ ",
+    "postversion": "rm -r dist ; ng build input-validaciones --configuration production  && mkdir dist && cp -r ../../dist/input-validaciones/* dist/",
     "publicar": "np --contents=./dist"
   },
   "repository": {
@@ -30,8 +30,8 @@
     "contents": "./dist"
   },
   "peerDependencies": {
-    "@angular/core": "^13.0.0",
-    "@angular/cli": "^13.0.1"
+    "@angular/core": "^14.2.2",
+    "@angular/cli": "^14.2.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
