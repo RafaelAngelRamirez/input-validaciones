@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "postversion": "rm -r dist ; ng build input-validaciones --configuration production  && mkdir dist && cp -r ../../dist/input-validaciones/* dist/",
-    "publicar": "np --contents=./dist"
+    "publicar": "npx np --contents=./dist"
   },
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
     "contents": "./dist"
   },
   "peerDependencies": {
-    "@angular/core": "^14.2.2",
-    "@angular/cli": "^14.2.2"
+    "@angular/core": "^16.0.5",
+    "@angular/cli": "^16.0.5"
   },
   "dependencies": {
     "tslib": "^2.0.0"
@@ -42,5 +42,8 @@
   "fesm2015": "./dist/fesm2015/codice-progressio-input-validaciones.js",
   "typings": "./dist/codice-progressio-input-validaciones.d.ts",
   "metadata": "./dist/codice-progressio-input-validaciones.metadata.json",
-  "sideEffects": false
+  "sideEffects": false,
+  "engines": {
+    "node": "16.x.x"
+  }
 }
