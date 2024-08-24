@@ -1,6 +1,6 @@
 {
   "name": "@codice-progressio/input-validaciones",
-  "version": "18.0.0",
+  "version": "18.0.1",
   "description": "Validaciones básicas para reacives forms",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
