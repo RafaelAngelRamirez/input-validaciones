@@ -31,10 +31,13 @@
   },
   "peerDependencies": {
     "@angular/core": "^18.0.0",
-    "@angular/cli": "^18.0.0"
+    "@angular/cli": "^18.0.0",
+    "tslib": "^2.0.0"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+
   },
   "module": "./dist/fesm2015/codice-progressio-input-validaciones.js",
   "es2015": "./dist/fesm2015/codice-progressio-input-validaciones.js",
@@ -44,6 +47,6 @@
   "metadata": "./dist/codice-progressio-input-validaciones.metadata.json",
   "sideEffects": false,
   "engines": {
-    "node": "20.x.x"
+    "node": "22.x.x"
   }
 }
