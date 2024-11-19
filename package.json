@@ -44,6 +44,6 @@
   "metadata": "./dist/codice-progressio-input-validaciones.metadata.json",
   "sideEffects": false,
   "engines": {
-    "node": "22.x.x"
+    "node": "x.x.x"
   }
 }
